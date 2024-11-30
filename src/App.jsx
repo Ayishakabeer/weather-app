@@ -19,10 +19,10 @@ const App = () => {
 
       const data = await response.json();
       setWeatherData(data);
-      setError(""); // Clear any previous errors
+      setError(""); 
     } catch (err) {
       setError(err.message);
-      setWeatherData(null); // Clear any previous data
+      setWeatherData(null);
     }
   };
 
